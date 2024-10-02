@@ -8,7 +8,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,7 +19,7 @@
             <h3>
                 December 15, 17:00
                 <br>
-                <a href="https://maps.app.goo.gl/oW7q5rqQMnmndpEE8" target="_blank"><img class="icon" src="google-maps.png" style="height: 1em; padding:10px"> 145 Dearborn Pl, Waterloo, ON</a>
+                <a href="https://maps.app.goo.gl/oW7q5rqQMnmndpEE8" target="_blank"> 145 Dearborn Pl, Waterloo, ON <img class="icon" src="google-maps.png" style="height: 1em; padding-left:0px"></a>
             </h3>
             <img src="zimniy_vecher.jpg" alt="Зимний Вечер"> 
         </div>
@@ -28,12 +29,13 @@
             
             <div class="partner">
                 <h3>The Music</h3>
+                <a href="https://www.facebook.com/CoverTrolls">
                 <img src="cover-trolls.jpeg" alt="Cover Trolls The Music" class="partner-image">
                 <h2 style="margin-bottom: 0;">
-                    <a -href="https://www.facebook.com/CoverTrolls">
-                        <img class="icon" src="facebook.png" style="height: 1em; padding:10px"> The Cover Trolls                    </a>
-                </h2>
-                <h4> present a night of old songs that everyone knows by heart</h4>
+                        <img class="icon" src="facebook.png" style="height: 1em; padding-right:0px"> The Cover Trolls                    
+                    </h2>
+                </a>
+                    <h4> present a night of those old songs that everyone knows by heart</h4>
             </div>
 
             
@@ -43,7 +45,7 @@
                     <a href="https://www.instagram.com/guram_dzebisashvili/">
                         <img src="guram.png" alt="V&D Events" class="partner-image">
                         <h2>
-                            <img class="icon" src="instagram.png" style="height: 1em; padding:10px"> guram_dzebisashvili
+                            <img class="icon" src="instagram.png" style="height: 1em; padding-right:0px"> guram_dzebisashvili
                         </h2>
                     </a>
                 </div>
@@ -51,12 +53,59 @@
             
             <div class="partner">
                 <h3>Organized by</h3>
-                <a href="vnd.borzov.ca">
+                <a href="https://vnd.borzov.ca">
                     <img src="vndevents.jpeg" alt="V&D Events" class="partner-image" style="width: 50%; ">
                 </a>
             </div>
             </div>
-        </div>
+
+            <div class="details">
+                <h3>Tickets</h3>
+            </div>
+            <div class="details">
+                <div class="partner">
+                    <div class="fixed_height">
+                        <h2 style="margin-bottom: 0;">Full Ticket</h2>
+                        <p>
+                           Includes dinner to be served at the event. Alcoholic drinks are extra.
+                        </p>
+                        </div>
+                           <h2 style="margin-bottom: 0;">$100</h2>
+                           <stripe-buy-button
+                           buy-button-id="buy_btn_1Q5aE8I3gHtRm3ENzkwfOiqH"
+                           publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t">
+                           </stripe-buy-button>
+                </div>
+                <div class="partner">
+                    <div class="fixed_height">
+                    <h2 style="margin-bottom: 0;">Early Bird Ticket</h2>
+                    <p>
+                    The Early Bird option is only available for the first three dozens of tickets. 
+                    <br>
+                       Covers access to the event and the full served dinner.
+                        Alcoholic drinks are extra.
+                    </p>
+                    </div>
+                       <h2 style="margin-bottom: 0;">$85</h2>
+                    
+                       <stripe-buy-button
+                       buy-button-id="buy_btn_1Q5aNfI3gHtRm3ENo2o5xz1j"
+                       publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t"
+                     >
+                      </stripe-buy-button>
+                </div>
+                <div class="partner">
+                    <div class="fixed_height">
+                    <h2 style="margin-bottom: 0;"> Kids'Zone (3-12yo)</h2>
+                       <p> The event will have a Kids'Zone, where parents will be able to leave their kids for the duration of the event. Kids'Zone will have a baby-sitter, activities and snacks organized. 
+                       </p>
+                    </div>
+                       <h2 style="margin-bottom: 0;">$10</h2>
+                      <stripe-buy-button buy-button-id="buy_btn_1Q5ZUuI3gHtRm3ENQjEsGUKm" publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t" >
+                      </stripe-buy-button>
+
+                </div>
+            </div>
     </div>
 </body>
 </html>

@@ -99,6 +99,8 @@ h4 {
     vertical-align: middle; /* Align the icon with the middle of the text */
     height: 1em; /* Scale the icon relative to the font size */
     width: auto; /* Maintain aspect ratio */
+    padding-left: 0;
+    padding-right: 0;
   }
 
 /* Add more styles as needed to match the poster's design */
@@ -139,4 +141,17 @@ a:link {
       width: 33%; /* Distribute the divs equally in one row */
       display: inline-block; /* Or use 'float: left;' */
     }
+  }
+
+  .fixed_height {
+    height: 200px;
+    padding: 30px;
+  }
+
+  p {
+    font-family: "Hahmlet", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #06585f;
   }
