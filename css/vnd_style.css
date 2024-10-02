@@ -1,0 +1,12 @@
+vndheader {
+    background-color: #aaffff; /* Set white background */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin: 0; /* Remove default body margins */
+  }
+  
+  img {
+    max-width: 80%; /* Limit image width to prevent overflow */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents a small space below the image in some browsers */
+  }

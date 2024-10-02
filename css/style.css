@@ -1,0 +1,107 @@
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
+
+/* general style */
+body    { 
+  display: flex;
+  justify-content: center;
+  font: 1rem/1.5 'Merriweather', serif;
+          margin: 0; padding: 0; font-weight: 300; 
+}
+a       { color: black; font-weight: 400; }
+a:hover { color: #CC0033; }
+
+/* headlines */
+
+#vndheader2 {
+  background-color: #77ffff; /* Set custom background */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin: 0; /* Remove default body margins */
+}
+
+h1, h2, h3, h4, h5, h6      { font-family: 'Merriweather', serif;
+                              color: #223;  }
+h1 a, h2 a, h3 a, h4 a,
+h5 a, h6 a                  { text-decoration: none; }
+h1 a:hover, h2 a:hover,
+h3 a:hover      { text-decoration: underline; }
+h1.title                    { 
+  width: 560px; 
+  text-align: center; 
+}
+h1, h2                      { margin: 10px 0 25px 0; }
+h1                          { font-size:2.5rem; line-height: 52px; }
+h2                          { font-size: 2em; line-height: 40px; }
+h3                          { font-size: 18px; line-height: 40px; background: #FED0D0; padding: 18px;}
+h4                          { font-size: 2em; margin-bottom: 10px;}
+
+
+p {
+  font-size: 1.1rem; /* Use rem for p */
+}
+
+textarea, code,
+pre          { font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono',
+               monospace!important; font-size: 1em; background: #eee; padding: 7px 7px;}
+
+blockquote {  padding: 0 0 0 25px;  margin: 0 0 38px;  border-left: 5px solid #FED0D0;}
+
+
+/* layout elements */
+div.container               { width: 740px; margin: 48px auto; padding: 0; }
+div.header                  { float: left; }
+div.navigation              { float: right; }
+div.header, div.navigation  { height: 25px; margin-bottom: 42px; }
+div.navigation ul           { margin: 0; padding: 0; list-style: none; }
+div.navigation ul li        { display: inline; margin: 0 2px; padding: 0; }
+div.body                    { clear: both; }
+div.footer p                { margin: 0; }
+b.date1 {
+  color: #880033;
+}
+
+/* margins and stuff */
+p, div.line-block, ul, ol,
+    table                       { margin: 25px 0 25px 0; }
+dt                              { margin: 25px 0 16px 0; padding: 0; }
+dd                              { margin: 16px 0 25px 40px; padding: 0; }
+ul ol, ol ul, ul ul, ol ol      { margin: 10px 0; padding: 0 0 0 40px; }
+li                              { padding: 0; }
+h1 + p.date                     { margin-top: -25px; }
+
+/* tables */
+table           { border: 1px solid #ddd; border-collapse: collapse;
+                  background: #fafafa; }
+td, th          { padding: 2px 12px; border: 1px solid #ddd; }
+
+
+/* blog overview */
+div.entry-overview                  { margin: 25px 122px 25px 102px; }
+div.entry-overview h1,
+div.entry-overview div.summary,
+div.entry-overview div.summary p    { display: inline; line-height: 25px; }
+div.entry-overview div.summary,
+div.entry-overview div.date,
+div.entry-overview div.summary p    { margin: 0; padding: 0; }
+div.entry-overview div.detail       { margin-left: 140px; }
+
+
+/* pagination */
+div.pagination          { margin: 36px 0 0 0; text-align: center; }
+div.pagination strong   { font-weight: normal; font-style: italic; }
+
+/* tags */
+p.tags          { text-align: right; }
+ul.tagcloud     { font-size: 1em; margin: 36px 0; padding: 0;
+                  list-style: none; }
+ul.tagcloud li  { margin: 0; padding: 0 10px; display: inline; }
+
+/* latex math */
+span.math img   { margin-bottom: -7px; }
+
+.photo {
+  padding: 5px;
+  border: 1px solid #a1a1a1;
+}
