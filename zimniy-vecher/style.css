@@ -1,0 +1,90 @@
+/* style.css */
+body {
+    font-family: sans-serif; /* Choose a suitable font */
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Light background color */
+}
+
+.container {
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+
+    margin-bottom: 40px;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.partner-image {
+    width: 100%;
+    height: auto;
+    z-index: -1; 
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Place the image behind other content */
+}
+
+.element-with-background {
+    background-image: url("vndevents.jpeg"); /* Set the image */
+    background-repeat: no-repeat;  /* Prevent image tiling */
+    background-position: center;  /* Center the image */
+    background-size: contain; /* Or 'contain', depending on your needs */
+    padding: 20px; /* Add padding to create space for the text */
+  }
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #06585f;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 4rem; /* Adjust as needed */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Lobster", sans-serif;
+    color: #d23332;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem; /* Adjust as needed */
+    margin-top: 0;
+}
+
+
+h3 {
+    font-family: "Lobster", sans-serif;
+    color: #06585f;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem; /* Adjust as needed */
+    margin-top: 0;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.location, .partner, .organizer {
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+
+/* Add more styles as needed to match the poster's design */
