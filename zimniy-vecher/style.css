@@ -75,6 +75,15 @@ h3 {
     margin-top: 0;
 }
 
+h4 {
+    font-family: "Lobster", sans-serif;
+    color: #d23332;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1rem; /* Adjust as needed */
+    margin-top: 0;
+}
+
 .details {
     display: flex;
     justify-content: space-around;
@@ -86,5 +95,48 @@ h3 {
     margin-bottom: 20px;
 }
 
+.icon {
+    vertical-align: middle; /* Align the icon with the middle of the text */
+    height: 1em; /* Scale the icon relative to the font size */
+    width: auto; /* Maintain aspect ratio */
+  }
 
 /* Add more styles as needed to match the poster's design */
+
+a:link { 
+    color: #d23332; /* Color for unvisited links */
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #d23332; /* Color for visited links */
+    text-decoration: none;
+  }
+
+  a:hover, a:focus {
+    text-decoration: underline;
+  }
+
+  .partner {
+    width: 100%; /* Default width for smaller screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 20px; /* Add some space between   
+   the divs */
+  }
+
+  .partner-image img {
+    width: 100%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    padding-left: 10%; /* 10% padding on the left */
+    padding-right: 10%; /* 10% padding on the right */
+    box-sizing: border-box; 
+  }
+
+  @media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .partner {
+      width: 33%; /* Distribute the divs equally in one row */
+      display: inline-block; /* Or use 'float: left;' */
+    }
+  }
