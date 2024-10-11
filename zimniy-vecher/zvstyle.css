@@ -136,19 +136,38 @@ a:link {
     box-sizing: border-box; 
   }
 
-  @media (min-width: 768px) { /* Adjust the breakpoint as needed */
+  @media (min-width: 916px) { /* Adjust the breakpoint as needed */
     .partner {
       width: 33%; /* Distribute the divs equally in one row */
       display: inline-block; /* Or use 'float: left;' */
       
     }
     .fixed_height {
-      height: 250px;
+      height: 200px;
     }  
   }
 
-  .fixed_height {
-    padding: 30px;
+  @media (max-width: 916px) { /* Adjust the breakpoint as needed */
+    .partner {
+      justify-content: center;
+      display: grid;
+      place-items: center;
+    }
+
+    .fixed_height {
+      max-width: 300px;
+      padding: 30px;
+    }
+
+    .ticket-box {
+      border: 3px solid #d23332; 
+      max-width: 350px;
+    }
+  
+  }
+
+  .ticket-box {
+    border: 3px solid #d23332; 
   }
 
   p {
