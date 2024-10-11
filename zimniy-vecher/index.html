@@ -3,53 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Зимний Вечер</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Зимний Вечер: Winter Night Festivities. December 15, 17pm
+in Waterloo. Learn more about the event and buy tickets </title>
+    <link rel="stylesheet" href="zvstyle.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
     <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 </head>
+
+
 <body>
     <div class="container">
         <div class="header">
             <h1>Зимний Вечер</h1>
             <h2>Winter Night Festivities</h2>
+        </div>
+        <div class="header">
+            <a href="#tickets" class="dashed-underline" style="color:white;"> Buy Tickets</a>
+        </div>
+        <div class="header">
             <h3>
                 December 15, 17:00
                 <br>
-                <a href="https://maps.app.goo.gl/oW7q5rqQMnmndpEE8" target="_blank"> 145 Dearborn Pl, Waterloo, ON <img class="icon" src="google-maps.png" style="height: 1em; padding-left:0px"></a>
+                <a href="https://maps.app.goo.gl/oW7q5rqQMnmndpEE8" target="_blank"> 145 Dearborn Pl
+                    <br> Waterloo, ON <img class="icon" src="google-maps.png" style="height: 1em; padding-left:0px"></a>
             </h3>
+        </div>
+        <div class="header">
             <img src="zimniy_vecher.jpg" alt="Зимний Вечер"> 
         </div>
 
-        <div class="details">
+</div>
 
+
+<div class="container" id="tickets">
+            <div class="details">
+                <img width="80px" src="line.divider.png">
+            </div>
+        <div class="details">
+            <h3>Tickets</h3>
+        </div>
+        <div class="details">
+            <div class="partner">
+                <div class="fixed_height">
+                    <h2 style="margin-bottom: 0;">Full Ticket</h2>
+                    <p>
+                    The ticket includes the dinner to be served at the event. Drinks are extra.
+                    </p>
+                    </div>
+                       <h2 style="margin-bottom: 0;">$100</h2>
+                       <stripe-buy-button
+                       buy-button-id="buy_btn_1Q5aE8I3gHtRm3ENzkwfOiqH"
+                       publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t">
+                       </stripe-buy-button>
+            </div>
+            <div class="partner">
+                <div class="fixed_height">
+                <h2 style="margin-bottom: 0;">Early Bird Ticket</h2>
+                <p>
+                Early Bird tickets are available in the first month of sales only. 
+                The ticket includes the dinner to be served at the event. Drinks are not included.
+                </p>
+                </div>
+                   <h2 style="margin-bottom: 0;">$85</h2>
+                
+                   <stripe-buy-button
+                   buy-button-id="buy_btn_1Q5aNfI3gHtRm3ENo2o5xz1j"
+                   publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t"
+                 >
+                  </stripe-buy-button>
+            </div>
+
+            <div class="partner">
+                <div class="fixed_height">
+                <h2 style="margin-bottom: 0;">Two Birds in Love</h2>
+                <p>
+                For a couple of two early birds. The tickets include the fully served dinner.
+                Drinks are not included. The couple must love each other for the tickets to be valid.
+                </p>
+                </div>
+                   <h2 style="margin-bottom: 0;">$160</h2>
+                
+                   <stripe-buy-button
+                   buy-button-id="buy_btn_1Q5aNfI3gHtRm3ENo2o5xz1j"
+                   publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t"
+                 >
+                  </stripe-buy-button>
+            </div>            
             
             <div class="partner">
-                <h3>The Music</h3>
+                <div class="fixed_height">
+                <h2 style="margin-bottom: 0;"> Kids Ticket</h2>
+                   <p> For kids aged 12 and under. A kids' dinner is included.
+                   </p>
+                   <p>
+                   </p>
+                </div>
+                   <h2 style="margin-bottom: 0;">$60</h2>
+                  <stripe-buy-button buy-button-id="buy_btn_1Q5ZUuI3gHtRm3ENQjEsGUKm" publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t" >
+                  </stripe-buy-button>
+
+            </div>
+
+            <div class="partner">
+                <div class="fixed_height">
+                <h2 style="margin-bottom: 0;"> Couple Tickets</h2>
+                   <p> Two tickets for a couple. A dinner to be served at the event is included. Drinks are not included.
+                   </p>
+                </div>
+                   <h2 style="margin-bottom: 0;">$185</h2>
+                  <stripe-buy-button buy-button-id="buy_btn_1Q5ZUuI3gHtRm3ENQjEsGUKm" publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t" >
+                  </stripe-buy-button>
+            </div>
+
+            <div class="partner">
+                <div class="fixed_height">
+                <h2 style="margin-bottom: 0;"> Seniors Ticket</h2>
+                   <p> For those of us who is 65 and over. The tickets include the fully served dinner.
+                    Drinks are not included.
+                   </p>
+                   <p>
+                   </p>
+                </div>
+                   <h2 style="margin-bottom: 0;">$80</h2>
+                  <stripe-buy-button buy-button-id="buy_btn_1Q5ZUuI3gHtRm3ENQjEsGUKm" publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t" >
+                  </stripe-buy-button>
+            </div>
+        </div>
+</div>
+
+
+
+<div class="container">
+    <div class="details">
+        <img width="80px" src="line.divider.png">
+    </div>
+    <div class="details" id="tickets">
+        <h3>About the event</h3>
+        <p>Get ready for an unforgettable evening filled with holiday cheer, music, and all kinds of merry-making!
+        </p> 
+
+        <p>
+            An enchanting evening of the End of The Year celebration 
+            ⬤ Served dinner included with the ticket (drinks are not included)
+            ⬤  Live music show by the legendary Cover Trolls band: sing along and dance to the old songs we know and love.
+            ⬤ An engaging and cheesy program with contests and prizes.
+        </p>
+        <br>
+        <p>
+            У зимних праздников разные названия и даты, но суть всегда одна и она стара как мир. 
+            <b>Зимним вечером,</b> когда в мире царит холод и тьма, мы отказываемся отчаиваться.  
+            Мы собираемся вместе и делимся друг с другом нашим теплом. 
+            Мы  вместе разжигаем огонь, свет которого делает наш мир немного светлее.
+        </p>
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="details">
+        <img width="80px" src="line.divider.png">
+    </div>
+    <div class="details" id="tickets">
+        <h3>Live music</h3>
+    </div>
+
+
+    <div class="header">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zvNMUpHd5X0?si=bfTz68p_fD7ZSOfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <br>
+        <p>В программе вечера музыкальный концерт <a href="https://www.facebook.com/CoverTrolls">группы КаверТроллз</a>, во главе с капитаном Мишей Куниным. Ребята подготовили для нас новогоднюю программу со старой доброй музыкой. Будут и песни, чтобы потанцевать, и такие, которым невозможно удержаться и не подпеть.
+        </p> 
+        <br>
+        <img src="spou.webp">
+
+    </div>
+
+</div>
+
+
+<div class="container">
+    
+                <div class="details">
+                    <h3>
+                        <img width="80px" src="line.divider.png">
+
+                    </h3>
+                </div>
+        <div class="details">
+            <div class="partner">
+                <h3>Catering</h3>
                 <a href="https://www.facebook.com/CoverTrolls">
-                <img src="cover-trolls.jpeg" alt="Cover Trolls The Music" class="partner-image">
+                <img src="images/zupa.png" alt="Zupa: Eastern European Cuisine" class="partner-image">
                 <h2 style="margin-bottom: 0;">
-                        <img class="icon" src="facebook.png" style="height: 1em; padding-right:0px"> The Cover Trolls                    
+                        <p>
+                            Zupa: Eastern European Cuisine
+                            <br>  😋 Delicious ukrainian food
+                            <br>🚶 Pickup /Delivery 🚗
+                            <br>📍Location: 1-20 Hurst Ave, Kitchener
+                            <br> ⬇️ Order Kwc-zupa.ca                    
                     </h2>
                 </a>
                     <h4> present a night of those old songs that everyone knows by heart</h4>
             </div>
 
             
-            <div class="partner">
-                <h3>General Partner</h3>
-                <div>
-                    <a href="https://www.instagram.com/guram_dzebisashvili/">
-                        <img src="guram.png" alt="V&D Events" class="partner-image">
-                        <h2>
-                            <img class="icon" src="instagram.png" style="height: 1em; padding-right:0px"> guram_dzebisashvili
-                        </h2>
-                    </a>
-                </div>
-            </div>
+
             
             <div class="partner">
                 <h3>Organized by</h3>
@@ -57,55 +220,29 @@
                     <img src="vndevents.jpeg" alt="V&D Events" class="partner-image" style="width: 50%; ">
                 </a>
             </div>
-            </div>
 
-            <div class="details">
-                <h3>Tickets</h3>
-            </div>
-            <div class="details">
-                <div class="partner">
-                    <div class="fixed_height">
-                        <h2 style="margin-bottom: 0;">Full Ticket</h2>
-                        <p>
-                           Includes dinner to be served at the event. Alcoholic drinks are extra.
-                        </p>
-                        </div>
-                           <h2 style="margin-bottom: 0;">$100</h2>
-                           <stripe-buy-button
-                           buy-button-id="buy_btn_1Q5aE8I3gHtRm3ENzkwfOiqH"
-                           publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t">
-                           </stripe-buy-button>
-                </div>
-                <div class="partner">
-                    <div class="fixed_height">
-                    <h2 style="margin-bottom: 0;">Early Bird Ticket</h2>
-                    <p>
-                    The Early Bird option is only available for the first three dozens of tickets. 
-                    <br>
-                       Covers access to the event and the full served dinner.
-                        Alcoholic drinks are extra.
-                    </p>
-                    </div>
-                       <h2 style="margin-bottom: 0;">$85</h2>
-                    
-                       <stripe-buy-button
-                       buy-button-id="buy_btn_1Q5aNfI3gHtRm3ENo2o5xz1j"
-                       publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t"
-                     >
-                      </stripe-buy-button>
-                </div>
-                <div class="partner">
-                    <div class="fixed_height">
-                    <h2 style="margin-bottom: 0;"> Kids'Zone (3-12yo)</h2>
-                       <p> The event will have a Kids'Zone, where parents will be able to leave their kids for the duration of the event. Kids'Zone will have a baby-sitter, activities and snacks organized. 
-                       </p>
-                    </div>
-                       <h2 style="margin-bottom: 0;">$10</h2>
-                      <stripe-buy-button buy-button-id="buy_btn_1Q5ZUuI3gHtRm3ENQjEsGUKm" publishable-key="pk_live_51Q5QT1I3gHtRm3ENp2cxzZpOOTfejNbQjpXsj0lorI9gcUOq80tTS4kYILdjSVSGzRrQE99HVJffPDu2ElSqLACl00YsWP405t" >
-                      </stripe-buy-button>
-
+            <div class="partner">
+                <h3>With support from</h3>
+                <div>
+                    <a href="https://www.instagram.com/guram_dzebisashvili/">
+                        <img src="guram.png" width="100px" alt="V&D Events" class="partner-image">
+                        <h2>
+                            <img class="icon" src="instagram.png" style="height: 1em; padding-right:0px"> guram_dzebisashvili
+                        </h2>
+                    </a>
                 </div>
             </div>
-    </div>
+</div>
+        <div class="container">
+            <div class="details">
+                    <img width="80px" src="line.divider.png">
+        </div>
+        <div class="details">
+            <h4>
+                <br><br><br>
+                2024 V&D Events. Waterloo, ON, Canada
+            </h4>
+            </div>
+        </div>
 </body>
 </html>

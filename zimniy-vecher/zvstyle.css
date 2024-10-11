@@ -140,11 +140,14 @@ a:link {
     .partner {
       width: 33%; /* Distribute the divs equally in one row */
       display: inline-block; /* Or use 'float: left;' */
+      
     }
+    .fixed_height {
+      height: 250px;
+    }  
   }
 
   .fixed_height {
-    height: 200px;
     padding: 30px;
   }
 
@@ -154,4 +157,27 @@ a:link {
     font-weight: 500;
     font-size: 1rem;
     color: #06585f;
+  }
+
+  .dashed-underline {
+    display: inline-block;
+    font-family: "Lobster", sans-serif;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #d23332; /* Example background color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Adjust the radius for more or less rounded corners */
+    border: none; /* Remove any default border */
+    cursor: pointer; /* Indicate that it's clickable */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    font-size: 2rem; /* Adjust as needed */
+
+  }
+
+  .dashed-underline:hover {
+    background-color: #e23332; /* Example background color */
+  }
+
+  hr {
+    border-color: #06585f; /* Change "red" to your desired color */
   }
